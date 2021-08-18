@@ -60,7 +60,7 @@ class instance_custom_training:
         save_json_path1 = os.path.abspath(os.path.join(dataset, "train.json"))
         
         #conversion of individual labelme json files into a single json file        
-        labelme2coco.convert(labelme_folder1, save_json_path1)
+        #labelme2coco.convert(labelme_folder1, save_json_path1)
         
         # Training dataset.
         self.dataset_train = Data()
@@ -75,7 +75,7 @@ class instance_custom_training:
         
         
         #conversion of individual labelme json files into a single json file  
-        labelme2coco.convert(labelme_folder2, save_json_path2)
+        #labelme2coco.convert(labelme_folder2, save_json_path2)
         
         # Training dataset.
         self.dataset_test = Data()
